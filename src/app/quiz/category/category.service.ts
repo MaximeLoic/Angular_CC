@@ -9,12 +9,24 @@ export class CategoryService {
   categories: Category[] = [];
   constructor(private http: HttpClient) {}
 
-  getCategories() {
+  getCategories(search?: string) {
     this.http.get<Category[]>('http://localhost:3000/categories').subscribe({
       next: (categories) => {
-        this.categories = categories;
+        if (search) {
+          this.categories = categories.filter((category) =>
+            category.name.toLowerCase().includes(search.toLowerCase())
+          );
+        } else {
+          this.categories = categories;
+        }
       },
       error: console.error,
     });
+  }
+
+  getCategory(categoryId: number) {
+    return this.http.get<Category>(
+      `http://localhost:3000/categories/${categoryId}`
+    );
   }
 }

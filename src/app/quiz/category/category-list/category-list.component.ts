@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { Category } from 'src/app/quiz/category/category.model';
 import { CategoryService } from 'src/app/quiz/category/category.service';
 
 @Component({
@@ -8,6 +9,7 @@ import { CategoryService } from 'src/app/quiz/category/category.service';
   styleUrls: ['./category-list.component.scss'],
 })
 export class CategoryListComponent implements OnInit {
+  search?: string;
   constructor(
     private categoryService: CategoryService,
     private router: Router
@@ -17,8 +19,12 @@ export class CategoryListComponent implements OnInit {
     this.categoryService.getCategories();
   }
 
-  get categories() {
+  get categories(): Category[] {
     return this.categoryService.categories;
+  }
+
+  handleSearch() {
+    this.categoryService.getCategories(this.search);
   }
 
   goToQuiz(categoryId: number) {

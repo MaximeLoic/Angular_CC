@@ -1,6 +1,18 @@
 <section class="bg-re">
   <h1 class="text-center">Choisis une catégorie</h1>
 
+  <div class="flex justify-center mt-5 gap-3">
+    <input
+      type="search"
+      name="category"
+      id="category"
+      placeholder="Rechercher"
+      class="border border-black rounded-lg px-3"
+      [(ngModel)]="search"
+    />
+    <button class="btn--outline" (click)="handleSearch()">Rechercher</button>
+  </div>
+
   <ul>
     <li *ngFor="let category of categories">
       <a routerLink="/quiz/{{ category.id }}">
