@@ -2,83 +2,78 @@
   "questions": [
     {
       "id": 1,
-      "questionLabel": "What is a component in Angular?"
+      "questionLabel": "What is a component in Angular?",
+      "categoryId": 1
     },
     {
       "id": 2,
-      "questionLabel": "Explain the purpose of the NgModule in Angular."
+      "questionLabel": "Explain the purpose of the NgModule in Angular.",
+      "categoryId": 1
     },
     {
       "id": 3,
-      "questionLabel": "How do you create a new Angular application?"
+      "questionLabel": "How do you create a new Angular application?",
+      "categoryId": 1
     },
     {
       "id": 4,
-      "questionLabel": "What is data binding in Angular, and what are the different types of data binding?"
+      "questionLabel": "What is data binding in Angular, and what are the different types of data binding?",
+      "categoryId": 1
     },
     {
       "id": 5,
-      "questionLabel": "Explain the difference between {{}} (interpolation) and [property] (property binding) in Angular templates."
+      "questionLabel": "Explain the difference between {{}} (interpolation) and [property] (property binding) in Angular templates.",
+      "categoryId": 1
     },
     {
       "id": 6,
-      "questionLabel": "What is event binding in Angular, and how is it implemented?"
+      "questionLabel": "Explain the concept of polymorphism in Object-Oriented Programming?",
+      "categoryId": 2
     },
     {
       "id": 7,
-      "questionLabel": "What is Angular CLI, and how do you use it to generate components?"
+      "questionLabel": "Describe the purpose of the JVM in the Java ecosystem.?",
+      "categoryId": 2
     },
     {
       "id": 8,
-      "questionLabel": "What is a directive in Angular? Can you name some built-in directives?"
+      "questionLabel": "What is a Java Interface, and how does it differ from an abstract class?",
+      "categoryId": 2
     },
     {
       "id": 9,
-      "questionLabel": "Explain the purpose of the Angular router and how to configure routes in an Angular application."
+      "questionLabel": "What are Java annotations, and how are they used in frameworks like Spring?",
+      "categoryId": 2
     },
     {
       "id": 10,
-      "questionLabel": "What is dependency injection in Angular, and why is it important?"
+      "questionLabel": "Explain the difference between checked and unchecked exceptions in Java?",
+      "categoryId": 2
     },
     {
       "id": 11,
-      "questionLabel": "How do you communicate between parent and child components in Angular?"
+      "questionLabel": "What is the box model in CSS, and how does it affect layout?",
+      "categoryId": 3
     },
     {
       "id": 12,
-      "questionLabel": "What is a service in Angular, and when should you use it?"
+      "questionLabel": "Explain the difference between `inline`, `block`, and `inline-block` elements in CSS",
+      "categoryId": 3
     },
     {
       "id": 13,
-      "questionLabel": "What is the purpose of the ngFor directive in Angular?"
+      "questionLabel": "How does CSS Flexbox work, and when should it be used?",
+      "categoryId": 3
     },
     {
       "id": 14,
-      "questionLabel": "Explain the concept of modules in Angular and their role in organizing an application."
+      "questionLabel": "Explain the concept of modules in Angular and their role in organizing an application.",
+      "categoryId": 3
     },
     {
       "id": 15,
-      "questionLabel": "What is Angular CLI's ng serve command used for?"
-    },
-    {
-      "id": 16,
-      "questionLabel": "What is Angular's two-way data binding, and how does it work?"
-    },
-    {
-      "id": 17,
-      "questionLabel": "What is Angular's trackBy function, and why is it used with ngFor?"
-    },
-    {
-      "id": 18,
-      "questionLabel": "How can you handle HTTP requests in Angular?"
-    },
-    {
-      "id": 19,
-      "questionLabel": "What are Angular pipes, and can you give some examples of built-in pipes?"
-    },
-    {
-      "id": 20,
-      "questionLabel": "Explain the concept of lazy loading in Angular and when it's beneficial."
+      "questionLabel": "What are CSS media queries, and how do they enable responsive design?",
+      "categoryId": 3
     }
   ],
   "answers": [
@@ -184,17 +179,17 @@
     },
     {
       "questionId": 6,
-      "answerLabel": "Event binding in Angular is used to capture and respond to user interactions like clicks and keystrokes.",
+      "answerLabel": "Event event.",
       "isCorrect": true
     },
     {
       "questionId": 6,
-      "answerLabel": "Event binding in Angular is used for defining component styles.",
+      "answerLabel": "Event binding  styles.",
       "isCorrect": false
     },
     {
       "questionId": 6,
-      "answerLabel": "Event binding in Angular is used for defining routes.",
+      "answerLabel": "Event CSS.",
       "isCorrect": false
     },
     {
@@ -264,12 +259,12 @@
     },
     {
       "questionId": 10,
-      "answerLabel": "Dependency injection in Angular is a design pattern used to provide instances of classes with their dependencies.",
+      "answerLabel": "Flexbox is a layout model that allows for responsive design by distributing space dynamically among items in a container",
       "isCorrect": true
     },
     {
       "questionId": 10,
-      "answerLabel": "Dependency injection in Angular is a way to inject styles into components.",
+      "answerLabel": "It provides an efficient way to align and distribute space among items in a container, especially when the size of items",
       "isCorrect": false
     },
     {
@@ -369,117 +364,17 @@
     },
     {
       "questionId": 15,
-      "answerLabel": "Angular CLI's 'ng serve' command is used to deploy an Angular application to a production server.",
+      "answerLabel": "The CSS Grid allows for precise control over the placement of elements in both horizontal and vertical spaces.",
       "isCorrect": false
     },
     {
       "questionId": 15,
-      "answerLabel": "Angular CLI's 'ng serve' command is used for data binding.",
+      "answerLabel": "Grid is ideal for creating complex, grid-based layouts where control over both dimensions is required, whereas Flexbox is better suited for simpler, one-dimensional layouts.",
       "isCorrect": false
     },
     {
       "questionId": 15,
-      "answerLabel": "Angular CLI's 'ng serve' command is used for event binding.",
-      "isCorrect": false
-    },
-    {
-      "questionId": 16,
-      "answerLabel": "Angular's two-way data binding combines property binding and event binding to automatically keep the view and the component data in sync.",
-      "isCorrect": true
-    },
-    {
-      "questionId": 16,
-      "answerLabel": "Angular's two-way data binding is used for routing configuration.",
-      "isCorrect": false
-    },
-    {
-      "questionId": 16,
-      "answerLabel": "Angular's two-way data binding is used for dependency injection.",
-      "isCorrect": false
-    },
-    {
-      "questionId": 16,
-      "answerLabel": "Angular's two-way data binding is used for handling HTTP requests.",
-      "isCorrect": false
-    },
-    {
-      "questionId": 17,
-      "answerLabel": "Angular's trackBy function is used to improve the performance of ngFor by identifying unique items in the iteration.",
-      "isCorrect": true
-    },
-    {
-      "questionId": 17,
-      "answerLabel": "Angular's trackBy function is used for defining routes.",
-      "isCorrect": false
-    },
-    {
-      "questionId": 17,
-      "answerLabel": "Angular's trackBy function is used for event binding.",
-      "isCorrect": false
-    },
-    {
-      "questionId": 17,
-      "answerLabel": "Angular's trackBy function is used for dependency injection.",
-      "isCorrect": false
-    },
-    {
-      "questionId": 18,
-      "answerLabel": "HTTP requests in Angular can be handled using the HttpClient module to send requests and receive responses from a server.",
-      "isCorrect": true
-    },
-    {
-      "questionId": 18,
-      "answerLabel": "HTTP requests in Angular can be handled using the ngFor directive.",
-      "isCorrect": false
-    },
-    {
-      "questionId": 18,
-      "answerLabel": "HTTP requests in Angular can be handled using dependency injection.",
-      "isCorrect": false
-    },
-    {
-      "questionId": 18,
-      "answerLabel": "HTTP requests in Angular can be handled using the trackBy function.",
-      "isCorrect": false
-    },
-    {
-      "questionId": 19,
-      "answerLabel": "Angular pipes are used for transforming and formatting data in templates.",
-      "isCorrect": true
-    },
-    {
-      "questionId": 19,
-      "answerLabel": "Angular pipes are used for defining routes.",
-      "isCorrect": false
-    },
-    {
-      "questionId": 19,
-      "answerLabel": "Angular pipes are used for event binding.",
-      "isCorrect": false
-    },
-    {
-      "questionId": 19,
-      "answerLabel": "Angular pipes are used for dependency injection.",
-      "isCorrect": false
-    },
-    {
-      "questionId": 20,
-      "answerLabel": "Lazy loading in Angular is a technique for loading modules only when they are needed, improving application performance.",
-      "isCorrect": true
-    },
-    {
-      "questionId": 20,
-      "answerLabel": "Lazy loading in Angular is a technique for handling HTTP requests.",
-      "isCorrect": false
-    },
-    {
-      "questionId": 20,
-      "answerLabel": "Lazy loading in Angular is a technique for event binding.",
-      "isCorrect": false
-    },
-    {
-      "questionId": 20,
-      "answerLabel": "Lazy loading in Angular is a technique for defining routes.",
+      "answerLabel": "CSS Grid is a two-dimensional layout system that controls both rows and columns.",
       "isCorrect": false
     }
   ],
@@ -494,5 +389,22 @@
       "username": "user",
       "password": "user"
     }
+  ],
+  "categories": [
+    {
+      "id":1,
+      "name": "ANGULAR"
+    },
+    {
+      "id":2,
+      "name": "JAVA"
+    },
+    {
+      "id":3,
+      "name": "CSS"
+    }
+
   ]
+
+
 }
