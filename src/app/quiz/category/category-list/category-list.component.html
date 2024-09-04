@@ -13,10 +13,10 @@
     <button class="btn--outline" (click)="handleSearch()">Rechercher</button>
   </div>
 
-  <ul>
+  <ul class="flex flex-wrap justify-center gap-3 mt-5">
     <li *ngFor="let category of categories">
       <a routerLink="/quiz/{{ category.id }}">
-        <div>
+        <div class="p-5 rounded-lg bg-violet-300 hover:bg-violet-400">
           <p>{{ category.name }}</p>
         </div>
       </a>
