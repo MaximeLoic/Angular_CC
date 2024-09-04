@@ -1,0 +1,13 @@
+<section class="bg-re">
+  <h1 class="text-center">Choisis une catégorie</h1>
+
+  <ul>
+    <li *ngFor="let category of categories">
+      <div>
+        <p>{{ category.name }}</p>
+      </div>
+    </li>
+  </ul>
+
+  <button class="btn--outline" (click)="goToQuiz(1)">C&apos;est parti !</button>
+</section>
