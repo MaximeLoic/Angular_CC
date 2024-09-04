@@ -5,7 +5,7 @@ import { QuizComponent } from './quiz/quiz.component';
 import { ResultComponent } from './quiz/result/result.component';
 import { LoginComponent } from './auth/login/login.component';
 import { RegisterComponent } from './auth/register/register.component';
-import { CategoryListComponent } from 'src/app/quiz/categories/category-list/category-list.component';
+import { CategoryListComponent } from 'src/app/quiz/category/category-list/category-list.component';
 
 const routes: Routes = [
   {
