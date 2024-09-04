@@ -3,9 +3,11 @@
 
   <ul>
     <li *ngFor="let category of categories">
-      <div>
-        <p>{{ category.name }}</p>
-      </div>
+      <a routerLink="/quiz/{{ category.id }}">
+        <div>
+          <p>{{ category.name }}</p>
+        </div>
+      </a>
     </li>
   </ul>
 </section>

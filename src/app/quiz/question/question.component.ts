@@ -1,4 +1,4 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, Input, OnChanges } from '@angular/core';
 import { QuizService } from '../../shared/services/quiz.service';
 
 @Component({
@@ -6,13 +6,13 @@ import { QuizService } from '../../shared/services/quiz.service';
   templateUrl: './question.component.html',
   styleUrls: ['./question.component.scss'],
 })
-export class QuestionComponent implements OnInit {
+export class QuestionComponent implements OnChanges {
   @Input({ required: true }) categoryId!: number;
   quizContent: any[] = this.quizService.quizContent;
 
   constructor(private quizService: QuizService) {}
 
-  ngOnInit(): void {
+  ngOnChanges(): void {
     this.quizService.getQuizContent(this.categoryId);
   }
 }
